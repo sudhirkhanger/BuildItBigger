@@ -1,5 +1,14 @@
 # Gradle for Android and Java Final Project
 
+-------------------------------------------------------------------------------
+## Student Notes
+
+The base code of this code is provided by Udacity. It is available
+under license specified by Udacity. Sudhir Khanger's code is made
+available under Apache License Version 2.0.
+
+-------------------------------------------------------------------------------
+
 In this project, you will create an app with multiple flavors that uses
 multiple libraries and Google Could Endpoints. The finished app will consist
 of four modules. A Java library that provides jokes, a Google Cloud Endpoints
@@ -135,3 +144,18 @@ Once you have a functioning project, consider adding more features to test your 
 * Make the free app variant display interstitial ads between the main activity and the joke-displaying activity.
 * Have the app display a loading indicator while the joke is being fetched from the server.
 * Write a Gradle task that starts the GCE dev server, runs all the Android tests, and shuts down the dev server.
+
+        Copyright 2016 Sudhir Khanger
+        
+        Licensed under the Apache License, Version 2.0 (the "License");
+        you may not use this file except in compliance with the License.
+        You may obtain a copy of the License at
+        
+            http://www.apache.org/licenses/LICENSE-2.0
+        
+        Unless required by applicable law or agreed to in writing, software
+        distributed under the License is distributed on an "AS IS" BASIS,
+        WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+        See the License for the specific language governing permissions and
+        limitations under the License.
+
