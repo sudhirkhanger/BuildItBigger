@@ -7,6 +7,10 @@ The base code of this code is provided by Udacity. It is available
 under license specified by Udacity. Sudhir Khanger's code is made
 available under Apache License Version 2.0.
 
+### Project Notes
+* Replace ip-addpress in EndpointsAsyncTask.java file in you plan to
+  test on a real device.
+
 -------------------------------------------------------------------------------
 
 In this project, you will create an app with multiple flavors that uses
