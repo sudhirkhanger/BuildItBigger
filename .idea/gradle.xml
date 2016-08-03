@@ -9,18 +9,18 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/libdisplayjokes" />
             <option value="$PROJECT_DIR$/libgce" />
             <option value="$PROJECT_DIR$/libjokes" />
-            <option value="$PROJECT_DIR$/libjokesactivity" />
           </set>
         </option>
         <option name="myModules">
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/libdisplayjokes" />
             <option value="$PROJECT_DIR$/libgce" />
             <option value="$PROJECT_DIR$/libjokes" />
-            <option value="$PROJECT_DIR$/libjokesactivity" />
           </set>
         </option>
       </GradleProjectSettings>

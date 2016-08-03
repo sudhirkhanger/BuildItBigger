@@ -3,11 +3,12 @@ package com.udacity.gradle.builditbigger;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.sudhirkhanger.app.libjokesactivity.JokesActivity;
+import com.sudhirkhanger.app.libdisplayjokes.DisplayJokesActivity;
 import com.sudhirkhanger.builditbigger.libjokes.LibJokes;
 
 
@@ -44,16 +45,14 @@ public class MainActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-//    public void tellJoke(View view) {
-//        LibJokes libJokes = new LibJokes();
-//        new EndpointsAsyncTask().execute(new Pair<Context, String>(view.getContext(), libJokes.getJokes()));
-////        Toast.makeText(this, "derp", Toast.LENGTH_SHORT).show();
-//    }
-
     public void tellJoke(View view) {
         LibJokes libJokes = new LibJokes();
-        Intent intent = new Intent(this, JokesActivity.class);
-        intent.putExtra(libJokes.getJokes(), KEY_JOKE);
+        String joke = libJokes.getJokes();
+
+        Log.d(MainActivity.class.getSimpleName(), "Intent " + joke);
+
+        Intent intent = new Intent(this, DisplayJokesActivity.class);
+        intent.putExtra(KEY_JOKE, joke);
         startActivity(intent);
     }
 }
