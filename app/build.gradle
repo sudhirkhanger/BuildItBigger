@@ -22,7 +22,6 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile project(path: ':libgce', configuration: 'android-endpoints')
-    compile project(':libjokes')
     compile project(':libdisplayjokes')
     compile 'com.android.support:appcompat-v7:24.1.1'
     compile 'com.google.android.gms:play-services:9.4.0'

@@ -16,16 +16,18 @@
 
 package com.sudhirkhanger.builditbigger.libgce;
 
-/** The object model for the data we are sending through endpoints */
-public class MyBean {
+/**
+ * The object model for the data we are sending through endpoints
+ */
+public class Joke {
 
-    private String myData;
+    private String joke;
 
-    public String getData() {
-        return myData;
+    public String getJoke() {
+        return joke;
     }
 
-    public void setData(String data) {
-        myData = data;
+    public void setJoke(String joke) {
+        this.joke = joke;
     }
 }

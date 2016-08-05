@@ -3,18 +3,17 @@ package com.udacity.gradle.builditbigger;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
 import com.sudhirkhanger.app.libdisplayjokes.DisplayJokesActivity;
-import com.sudhirkhanger.builditbigger.libjokes.LibJokes;
 
 
 public class MainActivity extends ActionBarActivity {
 
     public static final String KEY_JOKE = "KEY_JOKE";
+    public static final String LOG = MainActivity.class.getSimpleName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,13 +45,9 @@ public class MainActivity extends ActionBarActivity {
     }
 
     public void tellJoke(View view) {
-        LibJokes libJokes = new LibJokes();
-        String joke = libJokes.getJokes();
-
-        Log.d(MainActivity.class.getSimpleName(), "Intent " + joke);
-
         Intent intent = new Intent(this, DisplayJokesActivity.class);
-        intent.putExtra(KEY_JOKE, joke);
+        intent.putExtra(KEY_JOKE, "HELLO");
         startActivity(intent);
     }
+
 }
