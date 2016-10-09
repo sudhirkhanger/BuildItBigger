@@ -33,21 +33,11 @@ public class LibJokes {
             "Artificial intelligence is no match for natural stupidity.",
             "If you're not supposed to eat at night, why is there a light bulb in the refrigerator?"};
 
-    public static final String[] numberList = {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-    };
-
     private static final List<String> jokesArrayList = new ArrayList<>(Arrays.asList(jokesList));
-    private static final List<String> numbersArrayList = new ArrayList<>(Arrays.asList(numberList));
     private static Random random = new Random();
 
     public String getJokes() {
         int randomInt = random.nextInt(MAX);
-//        return jokesArrayList.get(randomInt);
-        return numbersArrayList.get(randomInt);
+        return jokesArrayList.get(randomInt);
     }
 }
