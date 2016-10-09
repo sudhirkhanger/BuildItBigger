@@ -23,8 +23,6 @@ import java.util.Random;
 
 public class LibJokes {
 
-    private static final int MAX = 5;
-
     // Add Jokes to a List
     private static final String[] jokesList = {
             "I find it ironic that the colors red, white, and blue stand for freedom until they are flashing behind you.",
@@ -37,7 +35,7 @@ public class LibJokes {
     private static Random random = new Random();
 
     public String getJokes() {
-        int randomInt = random.nextInt(MAX);
+        int randomInt = random.nextInt(jokesArrayList.size());
         return jokesArrayList.get(randomInt);
     }
 }

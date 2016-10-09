@@ -11,10 +11,21 @@ android {
         versionCode 1
         versionName "1.0"
     }
+
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    productFlavors {
+        free {
+            applicationId "com.udacity.gradle.builditbigger.free"
+        }
+
+        paid {
+            applicationId "com.udacity.gradle.builditbigger.paid"
         }
     }
 }
@@ -30,5 +41,6 @@ dependencies {
     compile project(path: ':gcebackend', configuration: 'android-endpoints')
     compile project(':libdisplayjokes')
     compile "com.android.support:appcompat-v7:$supportLibraryVersion"
-    compile "com.google.android.gms:play-services-ads:$playServicesVersion"
+    freeCompile "com.google.android.gms:play-services-ads:$playServicesVersion"
+    compile 'com.android.support:support-v4:24.2.1'
 }
