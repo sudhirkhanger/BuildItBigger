@@ -23,31 +23,31 @@ import java.util.Random;
 
 public class LibJokes {
 
-    public static final int MIN = 0;
-    public static final int MAX = 10;
+    private static final int MAX = 5;
 
     // Add Jokes to a List
-    String[] jokesList = {
+    private static final String[] jokesList = {
+            "I find it ironic that the colors red, white, and blue stand for freedom until they are flashing behind you.",
+            "Apparently I snore so loudly that it scares everyone in the car I'm driving.",
+            "I asked God for a bike, but I know God doesn't work that way. So I stole a bike and asked for forgiveness.",
+            "Artificial intelligence is no match for natural stupidity.",
+            "If you're not supposed to eat at night, why is there a light bulb in the refrigerator?"};
+
+    public static final String[] numberList = {
             "1",
             "2",
             "3",
             "4",
             "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
     };
-    List<String> jokesArrayList = new ArrayList<>(Arrays.asList(jokesList));
 
-    // Generate a random number
-    Random mRandom = new Random();
-    int random = mRandom.nextInt(MAX - MIN) + MIN;
-
-    // Jokes getter
+    private static final List<String> jokesArrayList = new ArrayList<>(Arrays.asList(jokesList));
+    private static final List<String> numbersArrayList = new ArrayList<>(Arrays.asList(numberList));
+    private static Random random = new Random();
 
     public String getJokes() {
-        return jokesArrayList.get(random);
+        int randomInt = random.nextInt(MAX);
+//        return jokesArrayList.get(randomInt);
+        return numbersArrayList.get(randomInt);
     }
 }

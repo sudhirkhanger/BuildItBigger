@@ -1,0 +1,8 @@
+2016/10/04-19:12:39.754 31664 Reusing MANIFEST /home/sudhir/Documents/Android/Udacity/BuildItBigger/test/Default/Session Storage/MANIFEST-000001
+2016/10/04-19:12:39.754 31664 Recovering log #3
+2016/10/04-19:12:39.755 31664 Level-0 table #3: started
+2016/10/04-19:12:39.901 31664 Level-0 table #3: 26166 bytes OK
+2016/10/04-19:12:39.901 31664 Recovering log #4
+2016/10/04-19:12:39.910 31664 Reusing old log /home/sudhir/Documents/Android/Udacity/BuildItBigger/test/Default/Session Storage/000004.log 
+2016/10/04-19:12:39.984 31664 Delete type=0 #3
+2016/10/04-19:12:39.984 31664 Delete type=2 #5

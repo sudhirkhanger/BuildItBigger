@@ -1,19 +1,23 @@
 package com.udacity.gradle.builditbigger;
 
-import android.support.v4.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
-
+import com.sudhirkhanger.app.libdisplayjokes.DisplayJokesActivity;
 
 /**
  * A placeholder fragment containing a simple view.
  */
 public class MainActivityFragment extends Fragment {
+
+    public static final String KEY_JOKE = "KEY_JOKE";
 
     public MainActivityFragment() {
     }
@@ -31,6 +35,19 @@ public class MainActivityFragment extends Fragment {
                 .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
                 .build();
         mAdView.loadAd(adRequest);
+
+        Button button = (Button) root.findViewById(R.id.show_joke_button);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                new EndpointsAsyncTask().execute();
+                Intent intent = new Intent(getActivity(), DisplayJokesActivity.class);
+                intent.putExtra(KEY_JOKE, "HELLO");
+                startActivity(intent);
+            }
+        });
+
         return root;
     }
 }

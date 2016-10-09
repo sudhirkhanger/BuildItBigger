@@ -16,15 +16,14 @@
 
 package com.sudhirkhanger.app.libdisplayjokes;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 public class DisplayJokesActivity extends AppCompatActivity {
 
     public static final String KEY_JOKE = "KEY_JOKE";
-    public static final String LOG = DisplayJokesActivity.class.getSimpleName();
+    public static final String LOG_TAG = DisplayJokesActivity.class.getSimpleName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

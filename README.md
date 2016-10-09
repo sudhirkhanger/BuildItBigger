@@ -10,6 +10,8 @@ available under Apache License Version 2.0.
 ### Project Notes
 * Replace ip-addpress in EndpointsAsyncTask.java file in you plan to
   test on a real device.
+* Make sure to open your firewall for port 8080 otherwise your local
+  GCE server will be out of reach.
 
 -------------------------------------------------------------------------------
 
@@ -162,4 +164,3 @@ Once you have a functioning project, consider adding more features to test your 
         WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
         See the License for the specific language governing permissions and
         limitations under the License.
-

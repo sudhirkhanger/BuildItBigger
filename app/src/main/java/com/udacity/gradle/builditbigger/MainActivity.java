@@ -1,19 +1,12 @@
 package com.udacity.gradle.builditbigger;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-
-import com.sudhirkhanger.app.libdisplayjokes.DisplayJokesActivity;
 
 
 public class MainActivity extends ActionBarActivity {
-
-    public static final String KEY_JOKE = "KEY_JOKE";
-    public static final String LOG = MainActivity.class.getSimpleName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,11 +36,4 @@ public class MainActivity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
-    public void tellJoke(View view) {
-        Intent intent = new Intent(this, DisplayJokesActivity.class);
-        intent.putExtra(KEY_JOKE, "HELLO");
-        startActivity(intent);
-    }
-
 }
