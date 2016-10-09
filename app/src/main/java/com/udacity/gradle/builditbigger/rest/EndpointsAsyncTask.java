@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.udacity.gradle.builditbigger;
+package com.udacity.gradle.builditbigger.rest;
 
 import android.os.AsyncTask;
 import android.util.Log;
@@ -27,7 +27,8 @@ import com.sudhirkhanger.builditbigger.libgce.jokeApi.JokeApi;
 
 import java.io.IOException;
 
-class EndpointsAsyncTask extends AsyncTask<Void, Void, String> {
+public class EndpointsAsyncTask extends AsyncTask<Void, Void, String> {
+
     private static JokeApi myApiService = null;
 
     @Override
