@@ -8,10 +8,19 @@ under license specified by Udacity. Sudhir Khanger's code is made
 available under Apache License Version 2.0.
 
 ### Project Notes
-* Replace ip-addpress in EndpointsAsyncTask.java file in you plan to
+* Replace ip-addpress in JokeDownloader.java file in you plan to
   test on a real device.
 * Make sure to open your firewall for port 8080 otherwise your local
   GCE server will be out of reach.
+  
+#### Tests
+
+Tests have been adopted from following blog posts.
+
+http://marksunghunpark.blogspot.in/2015/05/how-to-test-asynctask-in-android.html
+http://www.making-software.com/2012/10/31/testable-android-asynctask/
+https://web.archive.org/web/20160127060328/http://marcouberti.net/2015/07/11/mock-async-task-in-android-during-testing/
+http://stackoverflow.com/questions/12729280/junit-how-to-check-if-string-is-equal-to-one-of-two-strings
 
 -------------------------------------------------------------------------------
 

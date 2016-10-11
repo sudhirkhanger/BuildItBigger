@@ -29,9 +29,6 @@ import android.widget.Button;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.sudhirkhanger.app.libdisplayjokes.DisplayJokesActivity;
-import com.udacity.gradle.builditbigger.rest.EndpointsAsyncTask;
-
-import java.util.concurrent.ExecutionException;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -65,13 +62,13 @@ public class MainActivityFragment extends Fragment {
             public void onClick(View v) {
                 final Intent intent = new Intent(getActivity(), DisplayJokesActivity.class);
 
-                String joke = "N/A";
+                JokeDownloader jokeDownloader = new JokeDownloader(new JokeDownloader.EndpointListener() {
+                    @Override
+                    public void downloadComplete() {
 
-                try {
-                    joke = new EndpointsAsyncTask().execute().get();
-                } catch (InterruptedException | ExecutionException e) {
-                    e.printStackTrace();
-                }
+                    }
+                });
+                String joke = jokeDownloader.executeEndpoints();
 
                 Log.d(LOG_TAG, joke);
                 intent.putExtra(KEY_JOKE, joke);
